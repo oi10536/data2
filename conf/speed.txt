@@ -1,0 +1,8 @@
+<?php
+SESSION_START();
+include 'http://$MYIP:81/UserOnline.php';
+if(!$_SESSION['user']['username']){
+	header("location: http://$MYIP");
+}
+
+?>
